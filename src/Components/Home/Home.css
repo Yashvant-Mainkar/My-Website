@@ -1,0 +1,114 @@
+.hero {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textLine-1Container {
+    min-height: 50vh;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 3em;
+}
+
+.textLine-2Container {
+    /* height: 35vh; */
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    /* justify-content: center; */
+}
+
+.textLine1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: .6rem;
+}
+
+.text-1 {
+    width: 33%;
+    letter-spacing: .6px;
+    line-height: 1.7;
+}
+
+.text-2 {
+    font-size: 11rem;
+    font-weight: 900;
+}
+
+.scrollText {
+    font-size: .5rem;
+}
+
+/* Media Queries */
+
+@media (min-width:1025px) and (max-width:1200px) {
+    .text-1 {
+        width: 35%;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+    .text-1 {
+        width: 45%;
+    }
+
+    .text-2 {
+        font-size: 8rem;
+        font-weight: 800;
+    }
+}
+
+@media (min-width:481px) and (max-width:768px) {
+    .text-1 {
+        width: 55%;
+        letter-spacing: .4px;
+        line-height: 1.4;
+    }
+
+    .text-2 {
+        font-size: 5.5rem;
+        font-weight: 500;
+    }
+
+    .textLine1 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: .6rem;
+        /* padding-bottom: 10px; */
+    }
+
+    .scrollText {
+        border-bottom: none;
+        font-size: .5rem;
+        padding-top: 10px;
+    }
+
+    .textLine-1Container {
+        display: flex;
+        align-items: center;
+    }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .text-1 {
+        width: 90%;
+        letter-spacing: .4px;
+        line-height: 1.5;
+    }
+    
+    .text-2 {
+        font-size: 3.3rem;
+        font-weight: 600;
+    }
+    .textLine1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: .6rem;
+    }
+    
+}

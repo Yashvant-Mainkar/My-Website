@@ -1,0 +1,294 @@
+.mainABoutContainer {
+    position: relative;
+}
+
+.aboutBackBtn {
+    margin: 10px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.662);
+    box-shadow: 1px 0.5px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    text-shadow: 0px 0px 0px;
+    position: absolute;
+    top: 33%;
+    left: 3%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.aboutText {
+    font-size: 0.8rem;
+    /* width: 25%; */
+    padding-right: 10px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    line-height: 2;
+    display: flex;
+    align-items: center;
+    text-align: end;
+}
+
+.aboutBackBtn:hover {
+    box-shadow: 2px 3px;
+}
+
+.aboutBackBtn:active {
+    background-color: white;
+    color: black;
+    font-weight: 500;
+}
+
+.aboutPage {
+    height: 100vh;
+    width: 100%;
+    /* background-color: firebrick; */
+}
+
+.aboutUpperDiv {
+    margin: 0 auto;
+    width: 100%;
+    height: 20vh;
+    /* background-color: white; */
+    display: flex;
+}
+
+.aboutUpperleftDiv {
+    width: 15%;
+    /* background-color: aqua; */
+}
+
+.htmlLogo {
+    height: 10vh;
+    /* width: 40%; */
+    background-color: white;
+    box-shadow: 2px 1px 10px white;
+}
+
+.cssLogo {
+    height: 10vh;
+    background-color: white;
+    box-shadow: 2px 1px 10px white;
+}
+
+.jsLogo {
+    width: 90%;
+    height: 22vh;
+    background-color: white;
+    box-shadow: 2px 1px 10px white;
+}
+
+.reactLogo {
+    /* margin: 0 auto; */
+    height: 22vh;
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 1px 10px white;
+}
+
+.aboutMyPhoto {
+    height: 40vh;
+}
+
+.aboutUpperleftFirstDiv {
+    height: 12vh;
+    /* background-color: blueviolet; */
+}
+
+.aboutUpperMiddleDiv {
+    width: 65%;
+    /* background-color: chocolate; */
+}
+
+.aboutMiddleDiv {
+    height: 100vh;
+    /* background-color: coral; */
+}
+
+.aboutUpperRightDiv {
+    margin: 0 auto;
+    /* width: 30%; */
+
+}
+
+.aboutMiddleUpperDiv {
+    height: 25vh;
+    width: 30%;
+    margin: 0 auto;
+    /* background-color: forestgreen; */
+    text-align: center;
+}
+
+.aboutMiddleUpperDiv p {
+    margin-top: 1em;
+
+}
+
+.aboutMiddleMidleDiv {
+    width: 100%;
+    height: fit-content;
+    /* text-align: center; */
+    /* background-color: rgb(208, 208, 208); */
+    display: flex;
+}
+
+.myPhoto {
+    width: 100%;
+    /* background-color: antiquewhite; */
+}
+
+.aboutSecondlastDiv {
+    height: 25vh;
+    /* background-color: tomato; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.learningProccessText {
+    /* background-color: antiquewhite; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+    margin: 1em 0px;
+}
+
+.learningMethods {
+    width: 100%;
+    height: 20vh;
+    /* background-color: violet; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.learningMethods ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.learningMethods li {
+    margin: 0.5em 0px;
+}
+
+.learningMethodsBox1 {
+    /* background-color: blue; */
+
+    /* align-items: center; */
+}
+
+.listTitle {
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 1em;
+    border-bottom: 2px solid white;
+}
+
+.learningMethodsBox2 {
+    /* width: 100%; */
+    /* display: flex;
+    justify-content: space-between; */
+    /* background-color: forestgreen; */
+}
+
+.aboutLastDiv {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 20vh;
+    background-color: violet;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width:1201px) and (max-width:1600px) {}
+
+@media (min-width:1025px) and (max-width:1200px) {
+    .aboutBackBtn {
+        font-size: 1rem;
+    }
+    
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+    .aboutBackBtn {
+        font-size: 0.9rem;
+    }
+    .aboutBackBtn {
+        left: 5%;
+    }
+    .aboutText {
+        width: 85%;
+    }
+    .learningProccessText {
+        margin-top: 5em;
+    }
+    .learningMethodsBox1{
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width:481px) and (max-width:768px) {
+    .aboutBackBtn {
+        left: 7%;
+    }
+    .jsLogo{
+        height: 10vh;
+        margin-left:0.8em;
+        margin-top: 2.5em;
+    }
+    .aboutText {
+        /* height: fit-content; */
+        width: 150%;
+        /* background-color: firebrick; */
+
+    }
+    .aboutMyPhoto {
+        height: 30vh;
+    }
+    .learningProccessText {
+        font-size: 1.8rem;
+        margin-top: 6em;
+    }
+    .learningMethodsBox1{
+        font-size: 0.7rem;
+    }
+    .learningMethods{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+
+}
+
+@media (min-width:320px) and (max-width:480px) {
+    .htmlLogo{}
+    .reactLogo{
+        display: none;
+    }
+    .aboutBackBtn {
+        left: 10%;
+    }
+    .jsLogo{
+        height: 10vh;
+        margin-left:3em;
+        margin-top: 3em;
+    }
+    .learningMethodsBox1{
+        font-size: 0.5rem;
+    }
+    .aboutText{
+        text-align: left;
+        margin: 3em 0px;
+    }
+    .learningProccessText {
+        font-size: 1.5rem;
+        /* margin-top: 4em; */
+    }
+    .aboutMiddleMidleDiv{
+        display: flex;
+        flex-direction: column;
+    }
+}

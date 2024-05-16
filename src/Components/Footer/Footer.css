@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.footer {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropLineBox {
+    height: 45vh;
+    display: flex;
+    align-items: end;
+    font-size: 11.3rem;
+    font-weight: 800;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.121);
+}
+
+.dropLineImg {
+    width: 100%;
+    height: 25vh;
+    margin-bottom: 10px;
+}
+
+.footerSection {
+    letter-spacing: 2px;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    font-family: Roboto Mono;
+    align-items: center;
+    font-size: 0.6rem;
+}
+
+.backbtn {
+    cursor: pointer;
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+    .dropLineImg {
+        height: 20vh;
+    }
+}
+
+@media (min-width:481px) and (max-width:768px) {
+    .footerSection {
+        letter-spacing: 1px;
+        font-size: 0.5rem;
+    }
+
+    .dropLineImg {
+        height: 12vh;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .footerSection {
+        font-size: 0.4rem;
+    }
+
+    .dropLineImg {
+        height: 8vh;
+    }
+}

@@ -1,0 +1,271 @@
+.porfolio {
+    background-color: #0c0c1d82;
+    /* background-color: firebrick; */
+    /* width: 100%; */
+    /* height: auto; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    position: relative;
+}
+
+.box2Div {
+    /* padding: 10px; */
+    /* background-color: firebrick; */
+}
+
+.projectPageBackBtn {
+    margin: 10px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.662);
+    box-shadow: 1px 0.5px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    text-shadow: 0px 0px 0px;
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.projectPageBackBtn:hover {
+  box-shadow: 2px 3px;
+}
+
+.projectPageBackBtn:active {
+  background-color: white;
+  color: black;
+  font-weight: 500;
+}
+
+.subPorfolio {
+    width: 100%;
+    height: auto;
+    /* background-color: darkgoldenrod; */
+    /* flex-wrap: wrap; */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.name1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 20px;
+    letter-spacing: 2px;
+    word-spacing: 0.3em;
+}
+
+ul {
+    display: flex;
+    /* padding-bottom: 10px; */
+}
+
+/* projects button. ex. featured, react, js. etc */
+
+.name2 {
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    /* align-items:center ; */
+    flex-direction: row;
+
+}
+
+.projectsss {
+    width: 98%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    /* background-color: darkblue; */
+}
+
+
+.lightt {
+    margin: 35px 10px;
+    width: 31%;
+    height: 35vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background-color: darkgray; */
+}
+
+.projectContainerr {
+    width: 100%;
+    height: 40vh;
+    background-image: linear-gradient(to top left, #000428f3, #004e9272);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 10px;s */
+}
+
+.ProjectImgg {
+    transition: transform 0.3s ease;
+    /* position: relative; */
+}
+
+.ProjectImgg:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/*  */
+.imggg {
+    border-radius: 10px;
+    width: 90%;
+    height: 30vh;
+    margin: 0 auto;
+    box-shadow: 5px 5px 15px rgb(21, 24, 60);
+}
+
+.texttt {
+    color: black;
+    margin-left: 10px;
+    cursor: pointer;
+    /* position: absolute; */
+}
+
+.texttt:hover {
+    color: crimson;
+
+}
+
+.texttt:active {
+    color: black;
+}
+
+.textDiscriptionn {
+    color: rgba(128, 128, 128, 0.731);
+    font-size: 0.6rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width:1201px) and (max-width:1600px) {}
+
+@media (min-width:1025px) and (max-width:1200px) {
+    .name2 {
+        font-size: 1.1rem;
+    }
+
+    .projectContainerr {
+        width: 100%;
+        height: 42vh;
+    }
+
+    .imggg {
+        border-radius: 10px;
+        width: 100%;
+        height: 30vh;
+        margin: 0 auto;
+        box-shadow: 5px 5px 15px rgb(21, 24, 60);
+    }
+
+    .lightt {
+        margin: 35px 15px;
+        width: 44%;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+    .name2 {
+        font-size: 1.1rem;
+    }
+
+    .projectContainerr {
+        height: 38vh;
+    }
+
+    .lightt {
+        margin: 35px 15px;
+        width: 45%;
+    }
+
+    .imggg {
+        width: 95%;
+        height: 35vh;
+    }
+
+    .projectPageBackBtn {
+        /* margin: 9px; */
+        /* top: 4%; */
+        font-size: 0.8rem;
+        letter-spacing: 1.5px;
+        left: 5%;
+    }
+
+}
+
+@media (min-width:481px) and (max-width:768px) {
+    .name1 {
+        font-size: 2rem;
+    }
+
+    .name2 {
+        font-size: 0.8rem;
+        /* width: 100%; */
+    }
+
+    .lightt {
+        margin: 35px 15px;
+        width: 70%;
+    }
+
+    .imggg {
+        width: 95%;
+        height: 32vh;
+    }
+
+    .projectPageBackBtn {
+        top: 15px;
+        left: 30px;
+        font-size: 0.8rem;
+        /* padding: 10px; */
+    }
+}
+
+@media (min-width:320px) and (max-width:480px) {
+    .name1 {
+        font-size: 1.5rem;
+    }
+    
+    .name2 {
+        margin-top: 8em;
+        font-size: 0.6rem;
+    }
+
+    .lightt {
+        margin: 35px 15px;
+        width: 95%;
+    }
+
+    .imggg {
+        width: 90%;
+        height: 30vh;
+    }
+
+    .box2Div {
+        display: flex;
+        flex-direction: column;
+        /* padding: 10px; */
+        /* background-color: firebrick; */
+    }
+
+    .projectPageBackBtn {
+        top: 7.5em;
+        left: 2em;
+        font-size: 0.7rem;
+        /* padding: 10px; */
+    }
+
+    
+}

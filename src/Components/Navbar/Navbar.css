@@ -1,0 +1,64 @@
+  .navbarContainer {
+    padding-top: 1.1rem;
+    font-size: 0.8rem;
+    text-shadow: 1px 0.5px 0.5px;
+    letter-spacing: 1px;
+  }
+
+  .navbarWrapper {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+  }
+
+  .navLeft,
+  .navMiddle,
+  .navMiddle-1,
+  .navright {
+    margin-bottom: 0.5em;
+  }
+
+  .contactBtn {
+    padding: 5px 10px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.662);
+    box-shadow: 1px 0.5px;
+    color: white;
+    background-color: black;
+    font-size: 0.6rem;
+    cursor: pointer;
+    text-decoration: none;
+    text-shadow: 0px 0px 0px;
+  }
+
+  .contactBtn:hover {
+    box-shadow: 2px 3px;
+  }
+
+  .contactBtn:active {
+    background-color: white;
+    color: black;
+    font-weight: 500;
+  }
+
+  /* MEDIA QUERIES */
+
+  @media (min-width:481px) and (max-width:768px) {
+    .navbarContainer {
+      text-shadow: none;
+      letter-spacing: 0;
+    }
+    .contactBtn {
+      font-size: 0.6rem;
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    .navbarContainer {
+      text-shadow: 0px 0px 0px;
+      font-size: 0.4rem;
+    }
+    .contactBtn {
+      font-size: 0.4rem;
+    }
+  }

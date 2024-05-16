@@ -1,0 +1,142 @@
+.text {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.box1Contianer {
+    height: 70vh;
+    display: flex;
+    align-items: end;
+    border-bottom: 0.1px solid #ffffff13;
+}
+
+.textPart1 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 1em 0px;
+    line-height: 1.5;
+}
+
+.jokeText {
+    font-style: italic;
+}
+
+.joke {
+    font-weight: 900;
+    font-style: oblique;
+}
+
+.box2Contianer {
+    height: 50vh;
+    margin-top: 3em;
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8rem;
+}
+
+.textLeft {
+    width: 35%;
+    font-size: 0.6rem;
+}
+
+.textMiddle {
+    width: 23%;
+    font-size: 0.7rem;
+    line-height: 1.6;
+}
+
+.textRight {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Links {
+    font-size: 0.7rem;
+    margin-top: 1.6em;
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.Links:hover {
+    border-bottom: 3px solid white;
+}
+
+.Links:active {
+    border: none;
+}
+
+@media (min-width:1025px) and (max-width:1200px) {
+    .textPart1 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+    .textPart1 {
+        font-size: 1.2rem;
+    }
+
+    .textLeft {
+        width: 30%;
+    }
+
+    .textMiddle {
+        width: 45%;   
+    }
+}
+
+@media (min-width:481px) and (max-width:768px) {
+    .textPart1 {
+        font-size: 1rem;
+    }
+
+    .textLeft {
+        display: none;
+    }
+
+    .textMiddle {
+        width: 70%;
+        font-size: 0.6rem;
+    }
+
+    .textRight {
+        width: 25%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .textPart1 {
+        font-size: 0.7rem;
+        line-height: 2;
+    }
+
+    .textLeft {
+        display: none;
+    }
+
+    .textMiddle {
+        width: 80%;
+        font-size: 0.6rem;
+    }
+
+    .textRight {
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .box2Contianer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Links {
+        margin-top: 2em;
+    }
+
+}

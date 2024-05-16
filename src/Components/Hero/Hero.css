@@ -1,0 +1,156 @@
+.heroDiv {
+    height: 150vh;
+}
+
+.iimg {
+    height: 100vh;
+    width: 100%;
+    margin-top: 2em;
+    border-radius: 20px;
+}
+
+.textArea {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.alllLink {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.leftText {
+    width: 50%;
+}
+
+.allLinks {
+    margin-top: 1.6em;
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid white;
+    letter-spacing: 1.5px;
+}
+
+.allLinks:hover {
+    border-bottom: 3.5px solid white;
+}
+
+.middleOne {
+    display: flex;
+    flex-direction: column;
+}
+
+.middletwo {
+    display: flex;
+    flex-direction: column;
+}
+
+.rightBigDiv {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+@media (min-width:1025px) and (max-width:1200px) {
+    .textArea {
+
+        font-size: 0.6rem;
+        letter-spacing: 1.5px;
+    }
+
+    .leftText {
+        width: 40%;
+    }
+
+    .rightBigDiv {
+        width: 80%;
+        font-size: 0.5rem;
+    }
+
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+    .textArea {
+        font-size: 0.5rem;
+        letter-spacing: 1.5px;
+    }
+
+    .iimg {
+        height: 80vh;
+    }
+
+    .leftText {
+        width: 70%;
+    }
+
+    .rightBigDiv {
+        width: 150%;
+    }
+}
+
+@media (min-width:481px) and (max-width:768px) {
+    .iimg {
+        height: 60vh;
+    }
+
+    .textArea {
+        font-size: 0.7rem;
+        line-height: 2;
+        flex-direction: column;
+    }
+
+    .leftText {
+        width: 70%;
+        height: 20vh;
+        font-size: 0.6rem;
+    }
+
+    .rightBigDiv {
+        width: 90%;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    .gmail {
+        margin-top: -30px;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .rightBigDiv {
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+        font-size: 0.6rem;
+    }
+
+    .textArea {
+        font-size: 0.7rem;
+        line-height: 2;
+        flex-direction: column;
+    }
+
+    .iimg {
+        height: 40vh;
+        width: 100%;
+        margin-top: 2em;
+        border-radius: 20px;
+    }
+
+    .leftText {
+        width: 80%;     
+    }
+
+    .righttext {
+        font-size: 0.5rem;
+    }
+}
