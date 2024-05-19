@@ -100,7 +100,8 @@ ul {
 .projectContainerr {
     width: 100%;
     height: 40vh;
-    background-image: linear-gradient(to top left, #000428f3, #004e9272);
+    background-image: linear-gradient(to top left, #ffffff23, #141414);
+    /* background-image: linear-gradient(to top left, #ffffff,#342f2f); */
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -124,7 +125,7 @@ ul {
     width: 90%;
     height: 30vh;
     margin: 0 auto;
-    box-shadow: 5px 5px 15px rgb(21, 24, 60);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.747);
 }
 
 .texttt {

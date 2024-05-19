@@ -60,11 +60,11 @@
     margin-top: 1.6em;
     text-decoration: none;
     color: white;
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid white;
 }
 
 .Links:hover {
-    border-bottom: 3px solid white;
+    border-bottom: 4px solid white;
 }
 
 .Links:active {

@@ -1,5 +1,6 @@
 import "./Projects.css"
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
+import projectData from '../../LocalApi/MainProjectData';
 
 function Projects() {
   return (
@@ -7,43 +8,27 @@ function Projects() {
       <div className="topLeftText">
         <p className="projectText">Selected projects</p>
       </div>
-
-
-
       <div className="projects">
 
-
-        <div className="light">
-          <div className="projectContainer">
-            <div className="ProjectImg">
-            <Link to="eachproject"><img className="imgg" src="/Images/project-1.png" alt="" /></Link>
+        {projectData.map(project => (
+          <div key={project.id} className="light">
+            <div className="projectContainer"
+              style={{ backgroundImage: `${project.backgroundImage}`, }}>
+              <div className="ProjectImg">
+                <Link to={`eachproject/${project.id}`}>
+                  <img className="imgg" src={project.imgSrc} alt={project.title} />
+                </Link>
+              </div>
             </div>
+            <p className="textt">
+              {project.title}
+              <br />
+              <span className="textDiscription">CLICK TO CHECH MORE</span>
+            </p>
           </div>
-          <p className="textt">MILLIONAIRE QUIZ APP<br /><p className="textDiscription">DISCRIPTION IS GOOD </p></p>
-        </div>
-
-        <div className="light">
-          <div className="projectContainer">
-            <div className="ProjectImg">
-              <img className="imgg" src="/Images/project-1.png" alt="" />
-            </div>
-          </div>
-          <p className="textt">MILLIONAIRE QUIZ APP<br /><p className="textDiscription">DISCRIPTION IS GOOD </p></p>
-        </div>
-        <div className="light">
-          <div className="projectContainer">
-            <div className="ProjectImg">
-            <Link to="eachproject"><img className="imgg" src="/Images/project-1.png" alt="" /></Link>  
-            </div>
-          </div>
-          <p className="textt">MILLIONAIRE QUIZ APP<br /><span className="textDiscription">DISCRIPTION IS GOOD </span></p>
-        </div>
+        ))}
 
       </div>
-
-
-
-
     </div>
 
   )

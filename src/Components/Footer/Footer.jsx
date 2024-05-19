@@ -1,6 +1,28 @@
 import "./Footer.css"
+import {useState,useEffect} from "react"
 
 function Footer() {
+  const [currentDate, setCurrentDate] = useState('');
+
+  useEffect(() => {
+    const updateDate = () => {
+      const date = new Date();
+      const formattedDate = date.toLocaleDateString('en-IN', {
+        day: '2-digit',
+        month: '2-digit',
+        year: 'numeric'
+      });
+      setCurrentDate(formattedDate);
+    };
+
+    updateDate(); // Set initial date
+  }, []);
+
+  function goToTop(){
+    window.scrollTo({top : 0, left : 0 , behavior : "smooth"})
+
+  }
+
   return (
     <div className="footer">
       <div className="footerWrapper">
@@ -15,9 +37,9 @@ function Footer() {
             YASHVANT MAINKAR
           </div>
           <div className="place-Time">
-            MAHARASHRA (GMT +5.30)
+            MAHARASHRA (GMT +5.30) || {currentDate}
           </div>
-          <div className="backbtn">
+          <div onClick={goToTop} className="backbtn">
             <div>CLICK FOR BACK TO TOP</div>
           </div>
           <div className="rightsRight">

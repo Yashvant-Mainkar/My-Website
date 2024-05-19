@@ -20,12 +20,12 @@ function Text() {
           AS IF YOU GETTING KNOWN, YOU WILL REALIZE THAT THERE ARE MANY SMALL PROJECTS IN THIS WEBSITE. IF I KNEW WHAT IS GLOBLE SCOPE,
           THEN I WILL DEFINETLY KNOW WHERE FUNCTION DEFINATION SO I CAN USE ANYWHERE.
           <br /> <br />
-          SO AFTER YOUR CONCLUSION, THERE ARE MANY WAY'S WHERE YOU CAN CONTACT TO ME. 
+          SO AFTER YOUR CONCLUSION, THERE ARE MANY WAY'S WHERE YOU CAN CONTACT TO ME.
         </div>
         <div className="textRight">
-          <Link className="Links">LINKDIN</Link>
-          <Link className="Links">GITHUB</Link>
-          <Link className="Links">GMAIL</Link>
+          <Link to="" className="Links">LINKDIN</Link>
+          <a href="https://github.com/Yashvant-Mainkar" target="_blank" className="Links">GITHUB</a>
+          <a className="Links" href="mailto:yashwantmainkr64@gmail.com">GMAIL</a>
         </div>
 
       </div>

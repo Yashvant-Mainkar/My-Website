@@ -55,6 +55,9 @@
   font-size: 1rem;
 
 } */
+.viewbtn,.seeBtn{
+  background-image: linear-gradient(to top left,  #000000,#ffffff65)
+}
 .bolder{
   font-size: 2rem;
   font-weight: 700;

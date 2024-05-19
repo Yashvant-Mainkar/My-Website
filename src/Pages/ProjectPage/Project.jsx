@@ -1,5 +1,6 @@
 import "./Project.css"
 import {Link} from "react-router-dom"
+// import projectData from "../../LocalApi/Data"
 
 // subPorfolioDiv
 import { Listdata } from "../../LocalApi/Data"
@@ -72,7 +73,7 @@ function Project() {
                 <div key={eachItem} className="lightt">
                 <div className="projectContainerr">
                   <div className="ProjectImgg">
-                    <img className="imggg" src={eachItem.img} alt="" />
+                   <Link to={`/eachproject/${eachItem.id}`}><img className="imggg" src={eachItem.img} alt="" /></Link>
                   </div>
                 </div>
               </div>

@@ -1,60 +1,66 @@
-import "./EachProject.css"
-import {Link} from "react-router-dom"
+import "./EachProject.css";
+import { Link, useParams } from "react-router-dom";
+import EachProjectData from "../../LocalApi/EachProjectData";
 
 function EachProject() {
+  const { id } = useParams();  
+  const projectId = parseInt(id, 10); // Convert id to integer
+
+  const project = EachProjectData.find(proj => proj.id === projectId);
+
+  if (!project) {
+    return <>
+    <h1>THAT PROJECT PAGE IS NOT CREATED!.</h1>
+    <h2>MAY I PROVIED YOU TO GO BACK <Link to="/">GO BACK</Link></h2>
+    </>
+  }
+  function handleFn(){
+    if (!project.link) {
+      alert('PROJECT IS NOT DONE YET BUT SOON');
+    }
+  }
+
   return (
     <div className='eachProject'>
       <div className="eachBtnCont">
         <Link to=".."><button className="eachProjectBtn">Back</button></Link>
       </div>
       <div className="eachProjectWrapper">
-
-        <div className="light">
-          <div className="projectContainer">
+        <div key={project.id} className="light">
+          <div className="projectContainer"
+          style={
+            {
+              backgroundImage: `${project.backgroundImage}`,
+                
+            }
+          }
+          >
             <div className="ProjectImg">
-              <img className="imgg" src="/Images/project-1.png" alt="" />
+              <img className="imgg" src={project.imgSrc} alt={project.title} />
             </div>
           </div>
-          <p className="textt">MILLIONAIRE QUIZ APP<br /><p className="textDiscription">SEE IT OURSELF </p></p>
+          <p className="textt">
+            {project.title}
+            <br />
+            <span className="textDiscription">DESCRIPTION IS GOOD</span>
+          </p>
         </div>
-
-
       </div>
-
       <div className="eachBtnContainer">
-
-          <button className="viewbtn">VIEW SOURCE</button>
-
-        <button className="seeBtn">SEE IT YOURSELF</button>
-        
+       <a target="_blank" href={project.source}><button className="viewbtn">VIEW SOURCE</button></a>
+       {project.link ?(<a target="_blank" href={project.link}><button className="seeBtn">SEE IT YOURSELF</button></a>)
+            : (<a target="_blank" href={project.link}><button onClick={handleFn} className="seeBtn">SEE IT YOURSELF</button></a>)}
       </div>
-
-
       <div className="projectDisription">
-      <p className="bolder">DISRIPTION : </p>  
-      <span className="projectInfoText">
-        INTERMADIATE LEVEL REACT PROJECT BECAUSE THERE ARE LOT'S OF SMALL BUT TOO MANY FUNTIONALLITY, WHERE  EACH AND EVERY PROJECT 
-        CONNECTS THE WHOLE APP. I MADE SOME LOCAL API OF Q&A.  AS YOU CAN SEE GAME WILL START WHEN YOU CLICK THE BUTTON.
-         I USE GOOGLE EVERY TIME HONESTLY. AND TO GET KNOW DIFF HOOKS I USE YOUTUBE TOO. IT TOOK ME 1/5 WEEK TO COMPLETE. PLEASE FREE TO USE</span>
+        <p className="bolder">DISRIPTION : {project.language} </p>
+        <span className="projectInfoText">{project.projectInfoText}</span>
       </div>
-      {/* <br /> */}
       <div className="goodPartText">
         <p className="bolder">GOODPART & BADPART:</p>
-        <span className="projectInfoText">
-         API CONCEPT, SETTIME OUT, USEEFFECT, USESTATE, NOT RESPONSIVE FULLY. VS CODE IS SUPPORTIVE. </span>
+        <span className="projectInfoText">{project.projectInfoText1}</span>
       </div>
-      {/* <br /> */}
-      {/* <div className="badPartText">
-        BADPART : Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo officia quis sunt, quidem, aliquam perspiciatis illum quas expedita quia enim quos delectus incidunt minus. Accusamus commodi assumenda mollitia rem veritatis?
-      </div>
-      <br />
-      <div className="projectScreenshot">
-        <img src="" alt="" />
-      </div> */}
-
-
     </div>
-  )
+  );
 }
 
-export default EachProject
+export default EachProject;

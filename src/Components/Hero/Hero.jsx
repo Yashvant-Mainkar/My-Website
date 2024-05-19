@@ -14,24 +14,24 @@ function Hero() {
             YOU WILL WONDER AFTER YOU SEE THAT THIS WHOLE WEBSITE IS ONLY USING CSS.
           </div>
           <br />
-          <Link className="allLinks"><p className="gmail">yashwantmainkr64@gmail.com</p></Link>
+          <p className="gmail">yashwantmainkr64@gmail.com</p>
         </div>
 
         <div className="rightBigDiv">
           <div className="middleOne">
             <p> NAVIGATION</p>
             <div className="alllLink">
-              <Link className="allLinks">CONTACT</Link>
-              <Link className="allLinks">PROJECTS</Link>
-              <Link className="allLinks">ABOUT ME</Link>
+              <Link to="contact" className="allLinks">CONTACT</Link>
+              <Link to="project" className="allLinks">PROJECTS</Link>
+              <Link to="about" className="allLinks">ABOUT ME</Link>
             </div>
 
           </div>
           <div className="middletwo">
             <p>SOCIAL</p>
             <Link className="allLinks">LINKDIN</Link>
-            <Link className="allLinks">GITHUB</Link>
-            <Link className="allLinks">GMAIL</Link>
+            <a className="allLinks" href="https://github.com/Yashvant-Mainkar" target="_blank">GITHUB</a>
+            <a className="allLinks" href="mailto:yashwantmainkr64@gmail.com">GMAIL</a>
           </div>
           <div className="righttext">
             <p>LANGUAGE</p>
