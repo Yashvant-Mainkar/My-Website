@@ -6,7 +6,7 @@ function AboutPage() {
   return (
     <div className="mainABoutContainer">
 
-      <Link to=".."><button className="aboutBackBtn">Back</button></Link>
+      {/* <Link to=".."><button className="aboutBackBtn">Back</button></Link> */}
 
     <div className="aboutPage">
       <div className="aboutUpperDiv">

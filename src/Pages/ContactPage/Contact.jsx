@@ -1,6 +1,6 @@
 import "./Contact.css"
 import {Link} from "react-router-dom"
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 function Contact() {
@@ -25,7 +25,7 @@ function Contact() {
 
   return (
     <div className="main-container">
-      <Link to=".."><button className="conBackBtn">Back</button></Link>
+      {/* <Link to=".."><button className="conBackBtn">Back</button></Link> */}
 
       <div className="background-container">
         <div className="background-image">

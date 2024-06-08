@@ -33,7 +33,9 @@
     color: white;
     border-bottom: 2px solid white;
     letter-spacing: 1.5px;
+    linear-gradient:(to top left,#ffffffa2,#0fa704 );
 }
+
 
 .allLinks:hover {
     border-bottom: 4px solid white;

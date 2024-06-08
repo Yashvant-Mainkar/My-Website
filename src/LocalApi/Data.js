@@ -26,6 +26,11 @@ export const Listdata =[
 
 // FEATURED BUTTON PAGES
 export const featuredPortfolio = [
+    {
+        id : 18,
+        title : "hfhfh",
+        img : "/Images/project_img/rt-5.png"
+    },
 {
     id :2 ,
     title :"social" ,
@@ -47,16 +52,16 @@ export const featuredPortfolio = [
     title : "djjd",
     img : "/Images/project_img/js-2.png"
 },
-{
-    id :7 ,
-    title : "hdhdh",
-    img : "/Images/project_img/js-5.png"
 
-}
 ]
 
 // REACT BUTTON PAGES
 export const reactPortfolio = [
+    {
+        id : 18,
+        title : "hfhfh",
+        img : "/Images/project_img/rt-5.png"
+    },
 {
     id :2 ,
     title :"social" ,
@@ -72,6 +77,12 @@ export const reactPortfolio = [
     title : "hfhfh",
     img : "/Images/project_img/react-2.png"
 },
+{
+    id : 24,
+    title : "hfhfh",
+    img : "/Images/project_img/rt-6.png"
+},
+
 // {
 //     id : 4,
 //     title : "djjd",
@@ -88,11 +99,41 @@ export const reactPortfolio = [
 // JAVASCRIPT BUTTON PAGES
 
 export const javascriptPortfolio = [
+
+{
+    id :22 ,
+    title :"social" ,
+    img : "/Images/project_img/js-16.png"
+},
+{
+    id :19 ,
+    title :"social" ,
+    img : "/Images/project_img/js-13.png"
+},
+{
+    id :21 ,
+    title : "hdhdh",
+    img : "/Images/project_img/js-15.png"
+
+},
+{
+    id :16 ,
+    title : "hdhdh",
+    img : "/Images/project_img/js-11.png"
+
+},
+{
+    id :23 ,
+    title : "hdhdh",
+    img : "/Images/project_img/js-17.png"
+
+},
 {
     id :5 ,
     title :"social" ,
     img : "/Images/project_img/js-1.png"
 },
+
 {
     id : 3,
     title : "rmpa",
@@ -120,12 +161,7 @@ export const javascriptPortfolio = [
     img : "/Images/project_img/js-7.png"
 
 },
-{
-    id :11 ,
-    title : "hdhdh",
-    img : "/Images/project_img/js-8.png"
 
-},
 {
     id :14 ,
     title : "hdhdh",
@@ -139,11 +175,13 @@ export const javascriptPortfolio = [
 
 },
 {
-    id :16 ,
+    id :20 ,
     title : "hdhdh",
-    img : "/Images/project_img/js-11.png"
+    img : "/Images/project_img/js14.png"
 
 },
+
+
 {
     id : 9,
     title : "hfhfh",
@@ -155,6 +193,11 @@ export const javascriptPortfolio = [
 // BIGONE BUTTON PAGES
 
 export const bigOnePortfolio = [
+    {
+        id : 18,
+        title : "hfhfh",
+        img : "/Images/project_img/rt-5.png"
+    },
 
 {
     id : 8,
@@ -178,11 +221,7 @@ export const bigOnePortfolio = [
     img : "/Images/project_img/rt-1.png"
 
 },
-{
-   id :7 ,
-    title : "hdhdh",
-    img : "/Images/project_img/js-5.png"
-},
+
 ]
 
 // UPCOMMING BUTTON PAGES

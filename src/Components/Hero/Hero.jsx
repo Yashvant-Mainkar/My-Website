@@ -5,7 +5,7 @@ function Hero() {
   return (
     <div className="heroDiv">
       <div className="imgDivv">
-        <img className="iimg" src="/Images/aa.jpg" alt="" />
+        <img className="iimg" src="/Images/aa.png" alt="" />
       </div>
       <div className="textArea">
         <div className="leftBigDiv">
@@ -29,7 +29,8 @@ function Hero() {
           </div>
           <div className="middletwo">
             <p>SOCIAL</p>
-            <Link className="allLinks">LINKDIN</Link>
+
+            <a className="allLinks" href="https://www.linkedin.com/in/yashvantmainkar" target="_blank">LINKDIN</a>
             <a className="allLinks" href="https://github.com/Yashvant-Mainkar" target="_blank">GITHUB</a>
             <a className="allLinks" href="mailto:yashwantmainkr64@gmail.com">GMAIL</a>
           </div>

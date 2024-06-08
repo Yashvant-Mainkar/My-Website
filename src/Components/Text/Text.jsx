@@ -8,7 +8,7 @@ function Text() {
       <div className="box1Contianer">
         <div className="box1Div">
           <div className="textPart1">
-            WITH 8 MONTHS OF SELF-TAUGHT EXPERIENCE IN FRONT-END, I HAVE SOME EXPERTISE UNDER MY BELT. NEEDED TO DIVE DEEPER INTO THE WORLD OF WEB DEVE. HOWEVER, AS SLOWDOWN IN MY LEARNING JOURNEY. WHERE UPON REFLECTION, THE MISSING INGREDIENT IS LACK OF INTERACTION WITH EXCEPTIONAL TEAMS AND INDIVIDUALS.  NOW, LET'S LIGHTEN THE MOOD WITH A <p className="joke">JOKE :</p> <span className="jokeText">
+            WITH MONTHS OF SELF-TAUGHT EXPERIENCE IN FRONT-END, I HAVE SOME EXPERTISE UNDER MY BELT. NEEDED TO DIVE DEEPER INTO THE WORLD OF WEB DEVE. HOWEVER, AS SLOWDOWN IN MY LEARNING JOURNEY. WHERE UPON REFLECTION, THE MISSING INGREDIENT IS LACK OF INTERACTION WITH EXCEPTIONAL TEAMS AND INDIVIDUALS.  NOW, LET'S LIGHTEN THE MOOD WITH A <p className="joke">JOKE :</p> <span className="jokeText">
               "WHY DID THE JAVASCRIPT DEVELOPER BREAK UP WITH THEIR GIRLFRIEND? BECAUSE SHE SAID, 'I LIKE YOU!' BUT MEANT 'undefined'!"</span>
           </div>
         </div>
@@ -23,7 +23,7 @@ function Text() {
           SO AFTER YOUR CONCLUSION, THERE ARE MANY WAY'S WHERE YOU CAN CONTACT TO ME.
         </div>
         <div className="textRight">
-          <Link to="" className="Links">LINKDIN</Link>
+          <a href="https://www.linkedin.com/in/yashvantmainkar" target="_blank" className="Links">LINKDIN</a>
           <a href="https://github.com/Yashvant-Mainkar" target="_blank" className="Links">GITHUB</a>
           <a className="Links" href="mailto:yashwantmainkr64@gmail.com">GMAIL</a>
         </div>
